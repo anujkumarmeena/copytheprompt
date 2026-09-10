@@ -9,6 +9,27 @@ type GalleryCardProps = {
   onOpen: (item: PromptItem) => void;
 };
 
+function aspectClass(aspectRatio?: string) {
+  switch (aspectRatio) {
+    case "1:1":
+      return "aspect-square";
+    case "16:9":
+      return "aspect-video";
+    case "9:16":
+      return "aspect-[9/16]";
+    case "3:4":
+      return "aspect-[3/4]";
+    case "4:5":
+      return "aspect-[4/5]";
+    case "2:3":
+      return "aspect-[2/3]";
+    case "3:2":
+      return "aspect-[3/2]";
+    default:
+      return "aspect-[4/5]";
+  }
+}
+
 export function GalleryCard({ item, onOpen }: GalleryCardProps) {
   return (
     <article className="masonry-item group relative">
@@ -17,12 +38,14 @@ export function GalleryCard({ item, onOpen }: GalleryCardProps) {
         onClick={() => onOpen(item)}
         className="relative w-full overflow-hidden rounded-2xl border border-ctp-border/70 bg-ctp-surface text-left shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-0.5 hover:border-violet-400/40 hover:shadow-violet-500/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
       >
-        <div className="relative aspect-[4/5] w-full overflow-hidden bg-ctp-elevated">
+        <div
+          className={`relative w-full overflow-hidden bg-ctp-elevated ${aspectClass(item.aspectRatio)}`}
+        >
           <Image
             src={item.imageUrl}
             alt={item.title}
             fill
-            className="object-cover transition duration-500 group-hover:scale-[1.04]"
+            className="object-cover object-center transition duration-500 group-hover:scale-[1.04]"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 transition group-hover:opacity-90" />
