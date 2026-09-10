@@ -5,7 +5,7 @@ const indiaPromptsRaw: PromptItem[] = [
   {
     id: "eighty-album-india",
     title: "80s Family Album",
-    imageUrl: "/prompts/pack01-vaporwave-atrium.png",
+    imageUrl: "/prompts/house-eighty-album-india.png",
     prompt:
       "Turn this photo into a late-1980s Indian family album portrait. Kodak Gold film grain, slightly faded warm colours, soft flash, dated studio backdrop with painted curtains, big permed hair or side-part with oil sheen, printed polyester shirt or silk saree with gold border, thin gold chain, modest smile, pre-smartphone era, photoreal analog photograph, no modern phones, no LED lights.",
     negativePrompt: "modern smartphone, airpods, LED panel, HDR, plastic skin, watermark, text",
@@ -29,7 +29,7 @@ const indiaPromptsRaw: PromptItem[] = [
   {
     id: "banarasi-bride",
     title: "Banarasi Bridal Edit",
-    imageUrl: "/prompts/pack01-velvet-noir-muse.png",
+    imageUrl: "/prompts/house-banarasi-bride.png",
     prompt:
       "Editorial bridal portrait of an Indian bride in a crimson Banarasi silk lehenga with heavy zari and uncut polki jewellery, maang tikka, nath, fresh mogra in hair, soft window light in a haveli courtyard, photoreal skin, Vogue India cover energy, 85mm --ar 3:4 --stylize 200 --style raw",
     negativePrompt: "white wedding gown, western veil, plastic jewellery, selfie, watermark",
@@ -77,7 +77,7 @@ const indiaPromptsRaw: PromptItem[] = [
   {
     id: "garba-navratri",
     title: "Navratri Garba Circle",
-    imageUrl: "/prompts/pack01-hologram-idol.png",
+    imageUrl: "/prompts/house-garba-navratri.png",
     prompt:
       "Wide night shot of a Navratri garba circle in Gujarat, women in mirror-work chaniya choli spinning with dandiya, men in kediyu, layered fairy lights and dhol, motion blur on skirts, photoreal festival energy --ar 16:9 --stylize 160",
     negativePrompt: "club rave, EDM lasers, empty hall, cartoon",
