@@ -116,6 +116,7 @@ export const prompts: PromptItem[] = [
     model: "Flux.1 Pro",
     tags: ["sci-fi", "character", "cinematic", "futuristic", "night"],
     aspectRatio: "16:9",
+    trending: true,
   },
 {
     id: "nebula-cathedral",
