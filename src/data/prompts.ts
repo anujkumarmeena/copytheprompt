@@ -7,7 +7,7 @@ const archivePrompts: PromptItem[] = [
   {
     id: "porcelain-blade",
     title: "Porcelain Blade",
-    imageUrl: "/prompts/pack01-porcelain-blade.png",
+    imageUrl: "/prompts/house-porcelain-blade.png",
     prompt:
       "cinematic editorial portrait, subject with thick porcelain-white face paint like a ceramic mask, bold metallic gold brushstroke across forehead as kintsugi, black ink accent under one eye, short dark hair, sharp golden quill accessory, concrete gray backdrop, Rembrandt lighting, high fashion avant-garde --ar 3:4 --stylize 200 --v 6.1 --style raw",
     negativePrompt: "cartoon, anime screenshot, smiling selfie, daylight beach, low detail, watermark, text",
@@ -18,7 +18,7 @@ const archivePrompts: PromptItem[] = [
   {
     id: "liquid-chrome-gown",
     title: "Liquid Chrome Gown",
-    imageUrl: "/prompts/pack01-liquid-chrome-gown.png",
+    imageUrl: "/prompts/house-liquid-chrome-gown.png",
     prompt:
       "high fashion editorial, model in a floor-length liquid chrome couture gown that behaves like mercury, reflective metal fabric cascading, concrete column fashion set, single hard spotlight, Vogue cover energy, photoreal, 85mm, ultra sharp fabric reflections",
     negativePrompt: "casual clothes, wrinkled fabric, crowd, logo, text, plastic look",
@@ -50,7 +50,7 @@ const archivePrompts: PromptItem[] = [
   {
     id: "glass-skin-oracle",
     title: "Glass Skin Oracle",
-    imageUrl: "/prompts/pack01-glass-skin-oracle.png",
+    imageUrl: "/prompts/house-glass-skin-oracle.png",
     prompt:
       "extreme beauty close-up portrait, hyperreal skin with constellation freckles, shimmering gold eyeshadow, dark expressive eyes, soft parted lips, linen fabric framing the face, dewy glass-skin finish, softbox beauty lighting, editorial oracle mood, 90mm macro --ar 3:4 --stylize 180 --v 6",
     negativePrompt: "heavy cake makeup, plastic doll, watermark, text, harsh acne filters",
@@ -61,7 +61,7 @@ const archivePrompts: PromptItem[] = [
   {
     id: "hologram-idol",
     title: "Hologram Idol",
-    imageUrl: "/prompts/pack01-hologram-idol.png",
+    imageUrl: "/prompts/house-hologram-idol.png",
     prompt:
       "stylized holographic pop idol character, long magenta hair, large blue eyes, iridescent holographic crop top and flared skirt with gold trim, neon glow aura, cyan magenta yellow vaporwave lighting, vertical poster composition, future-funk concert energy",
     model: "Flux.1 Dev",
@@ -82,7 +82,7 @@ const archivePrompts: PromptItem[] = [
   {
     id: "velvet-noir-muse",
     title: "Velvet Noir Muse",
-    imageUrl: "/prompts/pack01-velvet-noir-muse.png",
+    imageUrl: "/prompts/house-velvet-noir-muse.png",
     prompt:
       "cinematic fashion portrait, muse in floor-length gown mixing crushed black velvet and deep crimson satin, dark textured collar, standing centered in a bright symmetrical pillar corridor, soft blurred face, high-contrast ethereal light pools, luxurious texture --ar 3:4 --stylize 220 --v 6.1 --style raw",
     model: "Midjourney v6.1",
