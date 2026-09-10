@@ -7,12 +7,17 @@ export default function HomePage() {
     <>
       <section className="border-b border-ctp-border/50">
         <div className="mx-auto max-w-7xl px-3 pb-6 pt-8 sm:px-5 sm:pb-8 sm:pt-10 lg:px-6">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90">
+            India edition · Sept 2026
+          </p>
           <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            See the image. <span className="gradient-text">Copy the prompt.</span>
+            Jo chal raha hai India mein.{" "}
+            <span className="gradient-text">Prompt copy karo.</span>
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ctp-muted sm:text-base">
-            Curated AI images with the exact Midjourney and Flux prompts that made
-            them — browse, open, one-tap copy.
+            Viral AI looks Indians are making this week — 80s family album,
+            Ganeshotsav, bridal lehenga, ghat sunrises, cricket nights. Image
+            dekho, exact Midjourney / Flux / ChatGPT prompt copy karo.
           </p>
         </div>
       </section>
@@ -21,15 +26,15 @@ export default function HomePage() {
         <GalleryBrowser
           items={trendingPrompts}
           tags={allTags}
-          title="Trending"
-          subtitle={`${trendingPrompts.length} new this week · scroll-stoppers`}
+          title="India mein viral"
+          subtitle={`${trendingPrompts.length} looks · 80s AI, Ganesh, shaadi, streets`}
         />
         <div className="mx-auto mt-8 max-w-7xl px-3 text-center sm:px-5 lg:px-6">
           <Link
             href="/gallery"
-            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-gradient-to-r from-violet-500 to-cyan-400 px-5 py-2.5 text-sm font-semibold text-black transition hover:brightness-110"
+            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 px-5 py-2.5 text-sm font-semibold text-black transition hover:brightness-110"
           >
-            Browse full collection
+            Poori gallery dekho
           </Link>
         </div>
       </div>
@@ -43,24 +48,24 @@ export default function HomePage() {
             {
               step: "01",
               title: "Browse",
-              body: "Trending on home, full collection inside — cinematic, fashion, product, and more.",
+              body: "Jo India mein chal raha hai — retro album, festive, fashion, streets, cricket.",
             },
             {
               step: "02",
               title: "Inspect",
-              body: "Open any tile for the full prompt, optional negative, model, and tags.",
+              body: "Tile kholo: full prompt, negative, model, tags. Remix ke liye ready.",
             },
             {
               step: "03",
               title: "Copy & create",
-              body: "One tap copies the prompt. Paste into Midjourney, Flux, or any compatible tool.",
+              body: "Ek tap. ChatGPT, Midjourney, Flux — jahan bani ho image, paste.",
             },
           ].map((card) => (
             <div
               key={card.step}
               className="rounded-[14px] border border-ctp-border bg-ctp-bg/60 p-5"
             >
-              <p className="text-xs font-semibold tracking-widest text-violet-300">
+              <p className="text-xs font-semibold tracking-widest text-amber-300">
                 {card.step}
               </p>
               <h2 className="mt-2 text-lg font-semibold">{card.title}</h2>
