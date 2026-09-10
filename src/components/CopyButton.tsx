@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { Toast } from "./Toast";
 
 type CopyButtonProps = {
   text: string;
@@ -17,7 +16,6 @@ export function CopyButton({
   variant = "primary",
 }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
-  const [toast, setToast] = useState(false);
 
   const handleCopy = useCallback(async () => {
     try {
@@ -31,7 +29,6 @@ export function CopyButton({
       document.body.removeChild(ta);
     }
     setCopied(true);
-    setToast(true);
     setTimeout(() => setCopied(false), 2000);
   }, [text]);
 
@@ -43,30 +40,23 @@ export function CopyButton({
       : "border border-ctp-border bg-ctp-elevated text-ctp-text hover:border-violet-400/40";
 
   return (
-    <>
-      <button
-        type="button"
-        onClick={handleCopy}
-        className={`${base} ${styles} ${className}`}
-      >
-        {copied ? (
-          <>
-            <CheckIcon />
-            Copied!
-          </>
-        ) : (
-          <>
-            <CopyIcon />
-            {label}
-          </>
-        )}
-      </button>
-      <Toast
-        message="Prompt copied to clipboard"
-        visible={toast}
-        onClose={() => setToast(false)}
-      />
-    </>
+    <button
+      type="button"
+      onClick={handleCopy}
+      className={`${base} ${styles} ${className}`}
+    >
+      {copied ? (
+        <>
+          <CheckIcon />
+          Copied!
+        </>
+      ) : (
+        <>
+          <CopyIcon />
+          {label}
+        </>
+      )}
+    </button>
   );
 }
 
