@@ -7,6 +7,8 @@ export type PromptItem = {
   model: string;
   tags: string[];
   aspectRatio?: string;
+  /** Featured on home Trending rail; badge in full collection. */
+  trending?: boolean;
 };
 
 export type TagFilter = string;
