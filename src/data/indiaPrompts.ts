@@ -1,6 +1,7 @@
 import type { PromptItem } from "@/lib/types";
+import { withHouseModel } from "./houseModel";
 
-export const indiaPrompts: PromptItem[] = [
+const indiaPromptsRaw: PromptItem[] = [
   {
     id: "eighty-album-india",
     title: "80s Family Album",
@@ -146,3 +147,13 @@ export const indiaPrompts: PromptItem[] = [
     trending: true,
   },
 ];
+
+const INDIA_HOUSE_MODEL_IDS = new Set([
+  "eighty-album-india",
+  "banarasi-bride",
+  "garba-navratri",
+]);
+
+export const indiaPrompts: PromptItem[] = indiaPromptsRaw.map((p) =>
+  INDIA_HOUSE_MODEL_IDS.has(p.id) ? withHouseModel(p) : p
+);
