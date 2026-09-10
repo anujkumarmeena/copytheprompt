@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "CopyThePrompt India — viral AI prompts to copy",
+    default: "CopyThePrompt — AI image prompts you can reuse",
     template: "%s · CopyThePrompt",
   },
   description:
-    "India ke viral AI looks: 80s album, Ganeshotsav, bridal, streets, cricket. Image dekho, prompt copy karo.",
+    "Browse a curated gallery of AI-generated images and copy the exact Midjourney and Flux prompts that created them.",
   metadataBase: new URL("https://copytheprompt.vercel.app"),
   openGraph: {
-    title: "CopyThePrompt India",
+    title: "CopyThePrompt",
     description:
-      "Viral Indian AI image prompts — one-tap copy for ChatGPT, Midjourney, Flux.",
+      "Gallery of AI images with one-click copyable prompts for Midjourney, Flux, and more.",
     url: "https://copytheprompt.vercel.app",
     siteName: "CopyThePrompt",
     type: "website",
