@@ -9,18 +9,19 @@ export function Footer() {
             Copy<span className="gradient-text">The</span>Prompt
           </p>
           <p className="mt-1 text-sm text-ctp-muted">
-            Browse AI images. Copy the exact prompts. Create your own.
+            India edition — viral looks, copy-ready prompts.
           </p>
         </div>
         <div className="flex gap-4 text-sm text-ctp-muted">
           <Link href="/" className="transition hover:text-ctp-text">
+            Home
+          </Link>
+          <Link href="/gallery" className="transition hover:text-ctp-text">
             Gallery
           </Link>
           <Link href="/about" className="transition hover:text-ctp-text">
             About
           </Link>
-          <span className="text-ctp-border">|</span>
-          <span>copytheprompt.com</span>
         </div>
       </div>
     </footer>
