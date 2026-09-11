@@ -1,5 +1,6 @@
 import type { PromptItem } from "@/lib/types";
 import { indiaPrompts } from "./indiaPrompts";
+import { pack002Prompts } from "./pack002";
 import { withHouseModel } from "./houseModel";
 
 const archivePrompts: PromptItem[] = [
@@ -118,9 +119,12 @@ const HOUSE_MODEL_IDS = new Set([
   "glass-skin-oracle",
   "hologram-idol",
   "velvet-noir-muse",
+  "diwali-lantern-courtyard",
+  "holi-gulal-portrait",
+  "meenakshi-corridor",
 ]);
 
-export const prompts: PromptItem[] = [...indiaPrompts, ...archivePrompts].map((p) =>
+export const prompts: PromptItem[] = [...pack002Prompts, ...indiaPrompts, ...archivePrompts].map((p) =>
   HOUSE_MODEL_IDS.has(p.id) ? withHouseModel(p) : p
 );
 
