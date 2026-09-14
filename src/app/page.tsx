@@ -22,7 +22,7 @@ export default function HomePage() {
           items={trendingPrompts}
           tags={allTags}
           title="Trending"
-          subtitle={`${trendingPrompts.length} India-viral looks · 80s album, festivals, streets`}
+          subtitle={`${trendingPrompts.length} India-viral looks · festivals, streets, desi aesthetic`}
         />
         <div className="mx-auto mt-8 max-w-7xl px-3 text-center sm:px-5 lg:px-6">
           <Link
