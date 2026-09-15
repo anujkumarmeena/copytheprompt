@@ -2,6 +2,7 @@ import type { PromptItem } from "@/lib/types";
 import { indiaPrompts } from "./indiaPrompts";
 import { pack002Prompts } from "./pack002";
 import { pack003Prompts } from "./pack003";
+import { pack006Prompts } from "./pack006";
 import { pack005Prompts } from "./pack005";
 import { pack004Prompts } from "./pack004";
 import { archive022Prompts } from "./archive022";
@@ -134,7 +135,7 @@ const HOUSE_MODEL_IDS = new Set([
   "balcony-chai-monsoon",
 ]);
 
-export const prompts: PromptItem[] = [...pack005Prompts, ...pack004Prompts, ...pack003Prompts, ...pack002Prompts, ...indiaPrompts, ...archivePrompts, ...archive022Prompts].map((p) =>
+export const prompts: PromptItem[] = [...pack006Prompts, ...pack005Prompts, ...pack004Prompts, ...pack003Prompts, ...pack002Prompts, ...indiaPrompts, ...archivePrompts, ...archive022Prompts].map((p) =>
   HOUSE_MODEL_IDS.has(p.id) ? withHouseModel(p) : p
 );
 
