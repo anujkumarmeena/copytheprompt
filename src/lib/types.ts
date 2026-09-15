@@ -4,7 +4,8 @@ export type PromptItem = {
   imageUrl: string;
   prompt: string;
   negativePrompt?: string;
-  model: string;
+  /** Optional internal only — never shown in UI. */
+  model?: string;
   tags: string[];
   aspectRatio?: string;
   /** Featured on home Trending rail; badge in full collection. */

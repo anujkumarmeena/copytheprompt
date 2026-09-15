@@ -1,6 +1,6 @@
 # CopyThePrompt
 
-Gallery of AI-generated images with one-click copyable prompts for Midjourney, Flux, and similar tools.
+Gallery of AI-generated images with one-click copyable prompts for AI image tools.
 
 **Brand:** CopyThePrompt
 **Domain (planned):** [copytheprompt.com](https://copytheprompt.com)
@@ -83,6 +83,6 @@ After DNS propagates, Vercel issues HTTPS certificates automatically.
 
 ## Notes / caveats
 
-- Placeholder images use `picsum.photos` with unique seeds (not real Midjourney outputs).
+- Placeholder images use `picsum.photos` with unique seeds (placeholder art).
 - Favorites are browser-local only and not synced across devices.
 - No accounts, payments, or generation endpoints in v1.

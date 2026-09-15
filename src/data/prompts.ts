@@ -135,9 +135,15 @@ const HOUSE_MODEL_IDS = new Set([
   "balcony-chai-monsoon",
 ]);
 
-export const prompts: PromptItem[] = [...pack006Prompts, ...pack005Prompts, ...pack004Prompts, ...pack003Prompts, ...pack002Prompts, ...indiaPrompts, ...archivePrompts, ...archive022Prompts].map((p) =>
-  HOUSE_MODEL_IDS.has(p.id) ? withHouseModel(p) : p
-);
+function stripModel(p: PromptItem): PromptItem {
+  const rest = { ...p };
+  delete rest.model;
+  return rest;
+}
+
+export const prompts: PromptItem[] = [...pack006Prompts, ...pack005Prompts, ...pack004Prompts, ...pack003Prompts, ...pack002Prompts, ...indiaPrompts, ...archivePrompts, ...archive022Prompts]
+  .map((p) => (HOUSE_MODEL_IDS.has(p.id) ? withHouseModel(p) : p))
+  .map(stripModel);
 
 export const trendingPrompts: PromptItem[] = prompts.filter((p) => p.trending);
 
