@@ -58,16 +58,9 @@ export function GalleryCard({
             <span className="absolute left-3 top-3 rounded-full bg-violet-500/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white shadow">
               Trending
             </span>
-          ) : (
-            <span className="absolute left-3 top-3 rounded-full bg-black/55 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wide text-white/90 backdrop-blur">
-              {item.model.split(" ")[0]}
-            </span>
-          )}
+          ) : null}
           <div className="absolute inset-x-0 bottom-0 p-3.5">
-            <p className="text-[11px] font-medium uppercase tracking-wider text-white/60">
-              {item.model}
-            </p>
-            <h3 className="mt-0.5 text-base font-semibold text-white">
+            <h3 className="text-base font-semibold text-white">
               {item.title}
             </h3>
             <div className="mt-2 flex flex-wrap gap-1.5">

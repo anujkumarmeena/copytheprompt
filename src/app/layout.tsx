@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     template: "%s · CopyThePrompt",
   },
   description:
-    "Browse a curated gallery of AI-generated images and copy the exact Midjourney and Flux prompts that created them.",
+    "Browse a curated gallery of AI-generated images and copy the exact prompts that created them.",
   metadataBase: new URL("https://copytheprompt.vercel.app"),
   openGraph: {
     title: "CopyThePrompt",
     description:
-      "Gallery of AI images with one-click copyable prompts for Midjourney, Flux, and more.",
+      "Gallery of AI images with one-click copyable prompts.",
     url: "https://copytheprompt.vercel.app",
     siteName: "CopyThePrompt",
     type: "website",

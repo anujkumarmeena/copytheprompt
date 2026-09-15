@@ -76,10 +76,11 @@ export function DetailModal({ item, onClose }: DetailModalProps) {
           <div className="flex flex-col">
             <div className="flex flex-col gap-5 p-5 pb-28 sm:p-7 sm:pb-7">
               <div className="pr-12 md:pr-0">
-                <p className="text-xs font-medium uppercase tracking-wider text-ctp-muted">
-                  {item.model}
-                  {item.aspectRatio ? ` · ${item.aspectRatio}` : ""}
-                </p>
+                {item.aspectRatio ? (
+                  <p className="text-xs font-medium uppercase tracking-wider text-ctp-muted">
+                    {item.aspectRatio}
+                  </p>
+                ) : null}
                 <h2
                   id="prompt-title"
                   className="mt-1 text-2xl font-semibold tracking-tight"

@@ -11,8 +11,8 @@ export default function HomePage() {
             See the image. <span className="gradient-text">Copy the prompt.</span>
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ctp-muted sm:text-base">
-            Curated AI images with the exact Midjourney, Flux, and ChatGPT prompts
-            that made them — including looks going viral in India this week.
+            Curated AI images with the exact prompts that made them — browse,
+            copy, and create.
           </p>
         </div>
       </section>
@@ -48,12 +48,12 @@ export default function HomePage() {
             {
               step: "02",
               title: "Inspect",
-              body: "Open any tile for the full prompt, optional negative, model, and tags.",
+              body: "Open any tile for the full prompt, optional negative, and tags.",
             },
             {
               step: "03",
               title: "Copy & create",
-              body: "One tap copies the prompt. Paste into Midjourney, Flux, ChatGPT, or any compatible tool.",
+              body: "One tap copies the prompt. Paste into your favorite AI image tool.",
             },
           ].map((card) => (
             <div

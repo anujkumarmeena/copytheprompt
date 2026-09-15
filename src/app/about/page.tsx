@@ -20,7 +20,7 @@ export default function AboutPage() {
         <p>
           <strong className="text-ctp-text">CopyThePrompt</strong> is a public
           gallery of AI-generated images paired with the exact prompts that
-          produced them. Click an image, read the full Midjourney, Flux, or
+          produced them. Click an image, read the full AI image tools — or
           ChatGPT-style prompt, and copy it in one click.
         </p>
         <p>
