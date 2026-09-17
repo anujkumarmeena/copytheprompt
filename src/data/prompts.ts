@@ -2,6 +2,7 @@ import type { PromptItem } from "@/lib/types";
 import { indiaPrompts } from "./indiaPrompts";
 import { pack002Prompts } from "./pack002";
 import { pack003Prompts } from "./pack003";
+import { pack007Prompts } from "./pack007";
 import { pack006Prompts } from "./pack006";
 import { pack005Prompts } from "./pack005";
 import { pack004Prompts } from "./pack004";
@@ -141,7 +142,7 @@ function stripModel(p: PromptItem): PromptItem {
   return rest;
 }
 
-export const prompts: PromptItem[] = [...pack006Prompts, ...pack005Prompts, ...pack004Prompts, ...pack003Prompts, ...pack002Prompts, ...indiaPrompts, ...archivePrompts, ...archive022Prompts]
+export const prompts: PromptItem[] = [...pack007Prompts, ...pack006Prompts, ...pack005Prompts, ...pack004Prompts, ...pack003Prompts, ...pack002Prompts, ...indiaPrompts, ...archivePrompts, ...archive022Prompts]
   .map((p) => (HOUSE_MODEL_IDS.has(p.id) ? withHouseModel(p) : p))
   .map(stripModel);
 
